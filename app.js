@@ -9,6 +9,7 @@ const Port = 4000
 
 app.use(morgan("dev"))
 app.use(express.json())
+app.use(express.static('./'));
 
 // Obtén la ruta completa del archivo actual (app.js)
 const __filename = fileURLToPath(import.meta.url);
